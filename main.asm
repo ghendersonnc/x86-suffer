@@ -25,7 +25,7 @@ _start:
         add eax, 0x30
         push eax
         lea ecx, [esp]
-        pop eax
+        add esp, 4
 
         mov eax, 0x4
         mov ebx, 0x1
@@ -47,7 +47,7 @@ _start:
     mov eax, 0xA
     push eax
     lea ecx, [esp]
-    pop eax
+    add esp, 4
 
     mov eax, 0x4
     mov edx, 1

@@ -8,7 +8,7 @@ Highly likely this is not the best way. I was doing this for fun.
 
 Nothing is commented :)
 
-I made this on a 64-bit Ubuntu 20.04 VM
+I made this on a 64-bit Ubuntu 20.04 VM. Program is 32-bit
 
 ## assemble and run
 
