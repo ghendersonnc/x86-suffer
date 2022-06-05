@@ -1,5 +1,5 @@
 section .data
-dividend dd -1200
+dividend dd -1204
 divisor dd 1000
 remainder dd 0
 
@@ -8,6 +8,8 @@ global _start
 _start:
     mov eax, [dividend]
     mov ecx, [divisor]
+    mov ebx, 0x1
+
 
     WHILE_DIVISOR_ABOVE_ZERO:
         cmp DWORD [dividend], -1
@@ -23,7 +25,6 @@ _start:
             add esp, 4
 
             mov eax, 0x4
-            mov ebx, 0x1
             mov edx, 1
             int 0x80
 
@@ -32,6 +33,7 @@ _start:
             mov eax, [dividend]
             mov ecx, [divisor]
 
+            jmp WHILE_DIVISOR_ABOVE_ZERO
         display_number:
             mov edx, 0
             div ecx
@@ -44,7 +46,6 @@ _start:
             add esp, 4
 
             mov eax, 0x4
-            mov ebx, 0x1
             mov edx, 1
             int 0x80
 
