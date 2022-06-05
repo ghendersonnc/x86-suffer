@@ -1,6 +1,6 @@
 # Understandable. Have a nice day
 
-Prints a number (dividend) that is 0 or greater
+Prints a number (dividend). Now includes negative numbers
 
 divisor should be a power of 10 and should have the same amount of digits as the dividend
 
